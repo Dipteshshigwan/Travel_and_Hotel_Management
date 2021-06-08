@@ -161,3 +161,6 @@ class DownloadPDF(View):
 		content = "attachment; filename='%s'" %(filename)
 		response['Content-Disposition'] = content
 		return response
+
+def hotel(request):
+    return render (request, "hotels.html")

@@ -13,5 +13,6 @@ urlpatterns = [
     path ("Reservation/Payment/invoice", views.invoice, name='invoice'),
     path('pdf_view/', views.ViewPDF.as_view(), name="pdf_view"),
     path('pdf_download/', views.DownloadPDF.as_view(), name="pdf_download"),
+    path ("Hotels", views.hotel, name= 'hotel'),
 ]
 urlpatterns += staticfiles_urlpatterns()

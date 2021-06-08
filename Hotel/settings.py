@@ -25,7 +25,7 @@ SECRET_KEY = 'uosc%n-5@wr_v0j!lgi#apcfem17&3-r%$^@ohppfbf)(rm5dd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'akashtours.herokuapp.com/']
 
 # Application definition
 

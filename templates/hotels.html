@@ -4,55 +4,97 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,900,700,100italic,300italic,400italic,500italic,700italic,900italic,300,100'">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="{% static 'css/main_hotel.css' %}">
     </head>
 
 <body>
-    <div class="wrap">
-        <div class="tile"> 
-          <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'/>
-          <div class="text">
-          <h1>Lorem ipsum.</h1>
-          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
+
+  <div class="container">
+    <div class="row">
+       <div class="col-md-12 mb-5">
+          <h2 class="main-head">Get Exclusive Offers and Sale From Us</h2>
+       </div>
+       <!-- Purple Table -->
+       <div class="col-md-4">
+          <div class="pricing-table purple">
+             <!-- Table Head -->
+             <div class="pricing-label">Fixed Price</div>
+             <h2 id="planname_1">Basic Pack</h2>
+             <h5></h5>
+             <!-- Features -->
+             <div class="pricing-features">
+                <div class="feature">-----<span>-----</span></div>
+                <div class="feature">-----<span>-----</span></div>
+                <div class="feature">-----<span>-----</span></div>
+                <div class="feature">-----<span>-----</span></div>
+                <div class="feature">-----<span>-----</span></div>
+             </div>
+             <!-- Price -->
+             <div class="price-tag">
+                <span class="symbol">₹</span>
+                <span class="amount" id="plan_1">499</span>
+                <span class="after">/month</span>
+             </div>
+             <!-- Button -->
+             <a class="price-button" href="/plan_payment" onclick="plan(1)">BOOK NOW</a>
           </div>
+       </div>
+       <!-- Turquoise Table -->
+       <div class="col-md-4">
+          <div class="pricing-table turquoise">
+             <!-- Table Head -->
+             <div class="pricing-label">Fixed Price</div>
+             <h2 id="planname_2">Premium Pack</h2>
+             <h5></h5>
+             <!-- Features -->
+             <div class="pricing-features">
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+             </div>
+             <!-- Price -->
+             <div class="price-tag">
+                <span class="symbol">₹</span>
+                <span class="amount" id="plan_2">999</span>
+                <span class="after">/month</span>
+             </div>
+             <!-- Button -->
+             <a class="price-button" href="/plan_payment" onclick="plan(2)">BOOK NOW</a>
           </div>
-         </div>
-        
-        
-        <div class="tile"> 
-          <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80'/>
-          <div class="text">
-          <h1>Lorem ipsum.</h1>
-          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
+       </div>
+       <!-- Red Table -->
+       <div class="col-md-4">
+          <div class="pricing-table red">
+             <!-- Table Head -->
+             <div class="pricing-label">Fixed Price</div>
+             <h2 id="planname_3">Gold pack</h2>
+             <h5></h5>
+             <!-- Features -->
+             <div class="pricing-features">
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+              <div class="feature">-----<span>-----</span></div>
+             </div>
+             <!-- Price -->
+             <div class="price-tag">
+                <span class="symbol">₹</span>
+                <span class="amount" id="plan_3">1599</span>
+                <span class="after">/month</span>
+             </div>
+             <!-- Button -->
+             <a class="price-button" href="/plan_payment" onclick="plan(3)">BOOK NOW</a>
           </div>
-          </div>
-         </div>
-          
-          <div class="tile"> 
-          <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'/>
-          <div class="text">
-          <h1>Lorem ipsum.</h1>
-          <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-          <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          </div>
-         </div>
-        </div>
-          
-        </div>
+       </div>
+    </div>
+ </div>
+         
+ <script src="{% static 'js/hotel.js' %}"></script>
+      
 </body>
 </html>

@@ -14,5 +14,7 @@ urlpatterns = [
     path('pdf_view/', views.ViewPDF.as_view(), name="pdf_view"),
     path('pdf_download/', views.DownloadPDF.as_view(), name="pdf_download"),
     path ("Hotels", views.hotel, name= 'hotel'),
+    path ("plan_payment", views.plan_payment, name="plan_payment"),
+    path ("plan_payment/plan_invoice", views.plan_invoice, name="plan_invoice"),
 ]
 urlpatterns += staticfiles_urlpatterns()

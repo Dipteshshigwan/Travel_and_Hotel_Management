@@ -51,7 +51,7 @@ def contact(request):
     return  render (request, "contact.html")
 def blog (request):
     chambres = Chambre.objects.all()
-    return render (request, "blog.html",{'chambres': chambres})
+    return render (request, "blog-2.html")
 def about(request):
     return render (request, "about.html")
 def payment(request):
@@ -164,3 +164,9 @@ class DownloadPDF(View):
 
 def hotel(request):
     return render (request, "hotels.html")
+
+def plan_payment(request):
+    return render (request, "plan-payment.html")
+
+def plan_invoice(request):
+    return render (request, "plan-invoice.html")

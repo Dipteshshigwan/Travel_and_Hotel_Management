@@ -1,0 +1,52 @@
+{% load static %}
+{% static "img" as baseUrl %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,900,700,100italic,300italic,400italic,500italic,700italic,900italic,300,100'">
+        <link rel="stylesheet" href="{% static 'css/plan-invoice.css' %}">
+    </head>
+
+<body>
+
+  <div class="container_2">
+    <div class="top-bar">
+      <i class="fa fa-coffee text"></i>
+      <span class="brand text">AKASH TOURS AND SERVICES</span>
+    </div>
+    <div class="info">
+      <div class="text">
+          
+        <span style="color: green;">PAYMENT SUCCESS</span>
+        <span>Hello Mr,</span>
+        <span>Here is your invoice for the service.</span>
+      </div>
+      <div class="text text2">
+        <span>Order Number: 222FHK</span>
+        <span id="date_date">Date: 12/7/21 </span>
+      </div>
+    </div>
+    <div class="reciept">
+      <div class="inner-box">
+        <div class="top">
+          <span>Product</span>
+          <span>Price</span>
+        </div>
+        <div class="bot">
+          <span id="plan_name"></span>
+          <span id="plan_amount" style="margin-left: 14.5rem;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <div class="results">
+        <span>Total: <span id="plan_amount_2"></span> </span>
+        <span>Extra Tax: 0.00</span>
+      </div>
+    </div>
+  </div>
+          
+  <script src="{% static 'js/hotel.js' %}"></script>    
+
+</body>
+</html>

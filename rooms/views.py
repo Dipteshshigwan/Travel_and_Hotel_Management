@@ -3,5 +3,5 @@ from home.models import Chambre
 # Create your views here.
 def allRooms (request):
    chambres = Chambre.objects.all()
-   return render(request, 'rooms.html', {'Chambres': chambres})
+   return render(request, 'rooms.html', {'chambres': chambres})
 

@@ -28,9 +28,9 @@ def index (request):
     chambres= Chambre.objects.all()
     catalogues= Catalogue.objects.all()
     testimonials = Testimonial.objects.all()
-    render(request,'index.html',{'testimonial': testimonials})
-    render (request,'index.html',{'catalogues': catalogues})
-    return render(request,"index.html",{'chambres': chambres})
+    render(request,'home.html',{'testimonial': testimonials})
+    render (request,'home.html',{'catalogues': catalogues})
+    return render(request,"home.html",{'chambres': chambres})
 
 def reservation (request, choice_1, choice_2):
     choice_1

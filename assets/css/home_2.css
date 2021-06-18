@@ -1,0 +1,689 @@
+/*
+    Theme Name: Site Travel
+    Theme Coder : Sahebt Alezar
+    PSD Designer:
+    First Color: #fff;
+    Second Color: #92c800 /// #0f7bde;
+
+    Font Famialy
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Changa', sans-serif;
+        font-family: 'Scheherazade', serif;
+*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+}
+h3 {
+	color: #232935;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 14px;
+}
+.top-bar {
+	background: rgba(22, 22, 22, 0.4);
+	position: relative;
+	overflow: hidden;
+}
+.top-bar span {
+	padding: 5px 0;
+	display: flex;
+	color: #fff;
+}
+.top-bar ul {
+	margin-bottom: 0;
+}
+.top-bar ul li {
+	padding: 5px 20px;
+}
+.top-bar ul a {
+	color: #fff;
+	font-size: 12px;
+}
+
+.top-bar a:hover {
+	text-decoration: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff !important;
+	padding: 0 12px;
+	transition: all 0.4s ease-in-out;
+	font-size: 14px;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	text-decoration: none !important;
+	color: #f96868 !important;
+}
+
+header {
+	padding: 150px 0 88px;
+	height: auto;
+	background: url(../images/pexels-photo-230976.jpg) no-repeat center;
+	background-size: cover;
+	margin-top: -96px;
+}
+
+header {
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .box {
+	width: 100%;
+	margin: auto;
+	/*padding: 50px 20px 20px ;*/
+}
+
+header .box ul {
+	display: flex;
+}
+
+header .box li {
+	padding: 10px 20px 0 0px;
+	list-style: none;
+	font-size: 14px;
+	color: #fff;
+}
+
+header .box ul li.active {
+	color: #f96868;
+}
+header .hide {
+	display: none;
+}
+
+header .active {
+	display: block;
+}
+header .box .box-ser {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px 30px 20px;
+	border-radius: 5px;
+}
+header .box .form {
+	background: #fff;
+	padding: 0;
+	margin: 0;
+	border-radius: 5px;
+	display: flex;
+}
+header .box input {
+	padding-left: 10px !important;
+}
+header .form input {
+	outline: none;
+	border: 0;
+}
+header .form input:last-of-type {
+	border: none;
+	border-right: 1px solid #fff !important;
+}
+header .box .btn-form {
+	padding: 10px 40px;
+	outline: none;
+	border: 0;
+	color: #fff;
+	background: #f96868;
+	/*float: right;
+    clear: both*/
+}
+
+header .box .sp {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	position: relative;
+	padding-top: 15px;
+	margin-left: 25px;
+}
+
+header .form {
+	display: flex;
+}
+
+header .box .sp:before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	left: -25px;
+	background: transparent;
+	border: 1px solid #fff;
+}
+header .wrapper {
+	width: 90%;
+	margin: auto;
+	padding-top: 145px;
+	color: #fff;
+	text-align: center;
+}
+header .owl-carousel .owl-stage-outer {
+	padding: 20px 0 10px;
+	background: rgba(0, 0, 0, 0.5);
+}
+header .wrapper h4 {
+	font-size: 16px;
+}
+
+header .wrapper p {
+	font-size: 14px;
+}
+
+header .owl-carousel .owl-nav button.owl-next,
+header .owl-carousel .owl-nav button.owl-prev,
+header .owl-carousel button.owl-dot {
+	background: #fff;
+}
+
+header .owl-theme .owl-nav {
+	margin-top: -88px !important;
+	font-size: 40px !important;
+}
+
+header .owl-carousel .btn-form {
+	font-size: 25px;
+}
+
+header button.owl-prev {
+	float: left;
+}
+
+header button.owl-next {
+	float: right;
+}
+
+header .owl-carousel .owl-next span {
+	margin-right: -40px;
+}
+
+header .owl-carousel .owl-prev span {
+	margin-left: -40px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	/* height: calc(2.25rem + 2px); */
+	/* padding: .375rem .75rem; */
+	/* font-size: 1rem; */
+	/* line-height: 1.5; */
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	/* border-radius: .25rem; */
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gj-datepicker-bootstrap [role="right-icon"] button {
+	width: 38px;
+	position: relative;
+	border: 1px solid #ffffff;
+	border-radius: 0;
+	border: 0;
+	border-right: 1px solid #ced4da;
+}
+
+/******************************************* Start *******************************************/
+.features {
+	padding: 75px 0;
+	font-size: 14px;
+}
+
+.features .cont-boxs {
+	padding: 20px 0 50px;
+}
+.features .box-card {
+	width: 100% !important;
+	margin-top: 30px;
+}
+.features h4,
+.features span,
+.features p {
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.features h3 {
+	font-size: 24px;
+}
+.features .top-text span {
+	font-weight: bold;
+}
+.features cont-boxs p:nth-child(2) {
+	font-weight: 500;
+	color: #484848;
+	margin-bottom: 0;
+}
+
+.features .top-text span > span {
+	color: #f96868;
+	font-size: 24px;
+	line-height: 0;
+}
+.features .btn-danger {
+	color: #fff;
+	background-color: #f96868;
+	border-color: #f96868;
+}
+
+.features .fa-calendar {
+	margin-right: 5px;
+}
+
+.features .list-group-item {
+	border: none;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+.features li {
+	font-size: 14px;
+}
+.features .fa-chevron-right {
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+.features div#accordionExample {
+	margin-top: 40px;
+}
+.features .card-deck h5 {
+	font-size: 12px;
+	color: #161616;
+	font-weight: 400;
+}
+
+.features .card-deck h5 span {
+	display: block;
+	font-size: 22px;
+	color: #f96868;
+	text-align: center;
+	font-weight: 400;
+}
+.features .card-btn {
+	width: 100%;
+}
+
+.features .card-deck .text {
+	width: 100%;
+	clear: both;
+}
+
+.features .card-deck .text .fa-user {
+	font-size: 50px;
+	color: #f96868;
+}
+
+.features .card-deck .text h3 {
+	font-size: ;
+	text-align: center;
+}
+
+.features .card-deck .text h3 span {
+	display: block;
+}
+
+.features .card-deck .card-text {
+	margin-bottom: 4px;
+}
+
+.features .btn-link {
+	font-weight: 700;
+	color: #232935;
+	font-size: 14px;
+	background-color: transparent;
+	position: relative;
+}
+.btn-link.focus,
+.btn-link:focus,
+.btn-link:hover {
+	color: #232935 !important;
+	text-decoration: none !important;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.mb-0 {
+	position: relative;
+}
+
+.features .mb-0:after {
+	content: "";
+	position: absolute;
+	right: -6px;
+	top: 50%;
+	width: 15px;
+	height: 3px;
+	background: #232935;
+	transform: translate(-50%, -50%);
+}
+
+.features .mb-0:before {
+	content: "";
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	width: 3px;
+	height: 15px;
+	background: #232935;
+	transform: translatey(-50%);
+}
+
+/******************************************** End ********************************************/
+/******************************************* Start *******************************************/
+.routes .box-card {
+	position: relative;
+}
+
+.routes .card-text {
+	position: absolute;
+	font-size: 16px;
+	color: #fff;
+	bottom: 60px;
+	text-align: center;
+	left: 50%;
+	font-weight: 400;
+	transform: translateX(-50%);
+	z-index: 3;
+	text-transform: capitalize;
+}
+
+.routes h3 {
+	padding-bottom: 30px;
+}
+
+.routes .box-card img {
+	width: 100%;
+}
+
+.routes .card-text span {
+	display: block;
+}
+
+.routes .card-text span > span {
+	display: inline;
+	font-weight: 400;
+}
+
+.routes .box-card:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	z-index: 2;
+	background-image: linear-gradient(#ece8e8, #484444);
+}
+
+/******************************************** End ********************************************/
+/******************************************* Start *******************************************/
+.top-country {
+	padding: 50px 0;
+}
+
+.top-country h3 {
+	padding-bottom: 30px;
+}
+
+.top-country .item {
+	display: flex;
+	border: 1px solid #ddd;
+	justify-content: space-around;
+}
+.images {
+	width: 100%;
+}
+
+.top-country h5 span {
+	display: block;
+	color: #484848;
+	font-weight: 200;
+	padding-top: 5px;
+}
+.top-country h5 {
+	font-size: 14px;
+	padding: 10px;
+}
+
+.top-country .owl-nav button span {
+	font-size: 36px;
+}
+
+.top-country button.owl-prev {
+	position: absolute;
+	top: 50%;
+	left: -35px;
+	transform: translate(0, -50%);
+}
+
+.top-country button.owl-next {
+	position: absolute;
+	top: 50%;
+	right: -35px;
+	transform: translate(-100%, -50%);
+}
+
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+	text-align: inherit;
+}
+
+/******************************************** End ********************************************/
+
+/*************************************** Start Support ***************************************/
+.support {
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.support .box {
+	border-left: 1px solid #e2e2e2;
+	padding: 25px;
+}
+
+.support .box:last-child {
+	border-right: 1px solid #e2e2e2;
+}
+
+.support h5,
+.support p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.support h5 {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.support p {
+	font-size: 14px;
+}
+/*************************************** End  Support ****************************************/
+/**************************************** Start Footer ***************************************/
+footer {
+	padding: 50px 0 20px;
+}
+footer h3 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #1d222d;
+	padding-bottom: 30px;
+}
+ul li {
+	list-style: none;
+	padding-bottom: 4px;
+	font-size: 14px;
+}
+
+a {
+	color: #484848 !important;
+	text-decoration: none !important;
+}
+
+footer select {
+	text-transform: none;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+footer form {
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+}
+
+footer #email {
+	width: 70%;
+	padding-left: 5px;
+	background-color: whitesmoke;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #e2e2e2;
+	padding: 5px 10px;
+	color: #afafaf;
+	background: #fff;
+	outline: none;
+}
+
+input[type="submit"] {
+	color: #fff;
+	cursor: pointer;
+	background-color: #f96868;
+	transition: all 0.3s linear;
+	padding: 10px 20px;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #f96868;
+}
+
+footer .news {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+footer .news .text {
+	margin-left: 10px;
+}
+footer .news h5 {
+	font-size: 14px;
+}
+
+footer .news p {
+	font-size: 10px;
+}
+
+.footer-bto {
+	border-top: 1px solid #e2e2e2;
+	padding: 20px 0;
+}
+
+.footer-bto li {
+	display: inline-block;
+	margin: 0 7px;
+}
+.footer-bto p {
+	margin: 0;
+	text-align: right;
+}
+/***************************************** End Footer ****************************************/
+/******************************************* Start *******************************************/
+@media only screen and (max-width: 767px) {
+	.support .box {
+		border-right: 1px solid #e2e2e2;
+		border-left: 1px solid #e2e2e2;
+	}
+
+	.support .box:nth-child(2) {
+		border: 1px solid #e2e2e2;
+	}
+	.footer-bto .logo,
+	.footer-bto .socil {
+		text-align: center;
+	}
+
+	.footer-bto .socil {
+		margin-top: 20px;
+	}
+
+	.footer-bto p {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 989px) {
+	.features .tex {
+		padding-top: 30px;
+	}
+	.routes .box-card {
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 989px) {
+	header .box .form {
+		background: transparent;
+		margin: 10px 0;
+		flex-wrap: wrap;
+	}
+
+	header .box input {
+		width: 100%;
+		border: 1px solid #e2e2e2 !important;
+		margin: 3px 0 !important;
+	}
+
+	header .box button {
+		width: 30%;
+		margin-top: 5px;
+		border-radius: 5px;
+	}
+	.features .box-card {
+		width: 100% !important;
+		margin-top: 30px;
+	}
+}
+/******************************************** End ********************************************/
+
+/* styling datepicker */
+.gj-datepicker {
+	overflow: hidden;
+	border-radius: 0;
+	margin: 3px 0 !important
+}
+.form-control {
+	border-radius: 0 !important;
+}
+.gj-datepicker .input-group-append {
+	overflow: hidden;
+	background: white;
+	margin: 3px 0 3px;
+}
+header .box input {
+	padding: 6px 0;
+}
+@media only screen and (max-width: 1200px) {
+	header .box .form {
+		background: transparent;
+		margin: 10px 0;
+		flex-wrap: wrap;
+	}
+	header .box .form > input{
+		width: 100% !important;
+		margin: 3px 0 !important
+	}
+	header .box .form  input{
+		margin: 3px 0 !important
+	}
+}

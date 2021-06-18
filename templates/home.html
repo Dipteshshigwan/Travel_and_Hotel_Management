@@ -1,0 +1,607 @@
+{% load static %}
+{% static "img" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Mumbai Online</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat:600|Playfair+Display|Roboto+Mono:500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-medium"></i>
+    <p>Home</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-users w3-medium"></i>
+    <p>Popular Places</p>
+  </a>
+  <a href="#Adventure" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-location-arrow w3-medium"></i>
+    <p>Adventure</p>
+  </a>
+  <a href="#Historical" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-map-o w3-medium"></i>
+    <p>Historical</p>
+  </a>
+  <a href="#Event" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-calendar w3-medium"></i>
+    <p>Festivals and Event</p>
+  </a>
+    <a href="#night" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-moon-o w3-medium"></i>
+    <p>Nightlife</p>
+  </a>
+  <a href="rooms/allRooms" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bed w3-medium"></i>
+    <p>Book Hotels</p>
+  </a>
+    <a href="#FAQ" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-question-circle w3-medium"></i>
+    <p>FAQ</p>
+  </a>
+   </a>
+    <a href="#Feedback" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-comment w3-medium"></i>
+    <p>Feedback</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Popular Places</a>
+    <a href="#Adventure" class="w3-bar-item w3-button" style="width:25% !important">Adventure</a>
+    <a href="#Historical" class="w3-bar-item w3-button" style="width:25% !important">Historical</a>
+    <a href="#Event" class="w3-bar-item w3-button" style="width:25% !important">Festivals and Event</a> 
+    <a href="#night" class="w3-bar-item w3-button" style="width:25% !important">Nightlife</a> 
+     <a href="rooms/allRooms" class="w3-bar-item w3-button" style="width:25% !important">Book Hotels</a>
+     <a href="#FAQ" class="w3-bar-item w3-button" style="width:25% !important">FAQ</a> 
+    <a href="#Feedback" class="w3-bar-item w3-button" style="width:25% !important">Feedback</a>    
+  </div>
+</div>
+<div class="w3-padding-large" id="main">
+<!-- partial:index.partial.html -->
+ 		<section class="wrap">
+ 			<div class="back">
+    <div class="back__slide active">
+      <div class="progress"></div>
+    </div>
+    <div class="back__slide">
+      <div class="progress"></div>
+      <div class="back-front-image"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__slide active">
+      <div class="image"></div>
+    </div>
+    <div class="card__slide">
+      <div class="back-image"></div>
+      <div class="image"></div>
+    </div>
+    <div class="content">
+      <div class="content__slide ">
+        <h2 class="title"> <span class="title__line"> <span class="title__inner">Mumbai</span></span><span class="title__line"> <span class="title__inner"><br>  Online</span></span></h2>
+        <p class="desc">Mumbai, the city where dreams are made and fulfilled! From jam-packed railway platforms to the famous Dabbawalas, multi-millionaires to suburban slums, the dazzling Bollywood to the quintessential vada pav, bhel puri, and sev puri, the uniqueness of Mumbai is beyond words.</p>
+        <div class="button-wrap"><a class="button">Learn More<span class="button__hover"></span></a></div>
+      </div>
+
+      <div class="content__slide active">
+      	<h2 class="button-wrap text-gray-600"><b>Mumbai Online</b></h2>
+        <br>
+<iframe class="button-wrap" width="360" height="215" src="https://www.youtube.com/embed/ULCaRWSlngM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+        <div class="button-wrap Learn"><a class="button">Back<span class="button__hover"></span></a></div>
+      </div>
+      <div class="content__ping content__ping--noanimation"></div>
+    </div>
+  </div>
+ 		</section>
+<!-- partial -->
+
+ <br>
+		
+		<section class="text-gray-600 body-font"  id="about">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-100">Popular Places</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div id="card-1" class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gateway of India</h2>
+          <p class="leading-relaxed text-base">Gateway of India, the best place to visit in Mumbai, was built in 1924 by George Willet to honor the visit of King George V and Queen Mary to Mumbai.</p>
+
+                </div>
+        </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Sanjay-Gandhi-National-Park-1.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Sanjay Gandhi National Park</h2>
+          <p class="leading-relaxed text-base">Sprawling over an area of 104sq.km. of land, this is one of the most-visited national parks in Asia,I give it the 2nd spot among all the best places to visit in Mumbai.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Red-Carpet-Wax-Museum.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Red Carpet Wax Museum</h2>
+          <p class="leading-relaxed text-base">Ever imagined standing next to Barack Obama, striking a pose with Michael Jackson or taking a selfie with Harry Potter? Yes, you read it right. </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Haji-Ali.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Haji Ali Dargah</h2>
+          <p class="leading-relaxed text-base">How about taking a trip with your family to one of the most popular religious shrines in Mumbai, built right in the middle of the Arabian Sea?</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4" data-aos="fade-right">
+      <div class="xl:w-1/4 md:w-1/4 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Elephenta-Caves.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Elephanta Caves</h2>
+          <p class="leading-relaxed text-base">Take a tour to this UNESCO World Heritage Site in Mumbai and get wonderstruck by the massive rock-cut caves that date back to several centuries.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-right">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Siddhivinayak-Temple.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Siddhivinayak Temple</h2>
+          <p class="leading-relaxed text-base">One of the most frequented temples in Mumbai, the Siddhivinayak Temple is dedicated to Lord Ganesh. 
+
+            </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-right">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Chhatrapati-Shivaji-Terminus.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chhatrapati Shivaji Terminus</h2>
+          <p class="leading-relaxed text-base">Chatrapati Shivaji Terminus is another UNESCO World Heritage Site situated right in the heart of Mumbai.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-right">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/04/ISKCON-Temple-2.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">ISKCON Temple</h2>
+          <p class="leading-relaxed text-base">Also known as Sri Sri Radha Rasabihari ji Temple, it is close to Juhu Beach and boasts 4 acres of land area.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Adventure-->
+<section class="text-gray-600 body-font"  id="Adventure">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-100">Adventure Places In Mumbai</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div id="card-1" class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Powai-Lake.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Powai Lake</h2>
+          <p class="leading-relaxed text-base">The beautiful and artificial Powai Lake is 12m deep and spread over 6.6 km. IIT Bombay is situated to the lake’s east and adds extra sparkle to it. </p>
+
+                </div>
+        </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Sanjay-Gandhi-National-Park-1.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Sanjay Gandhi National Park</h2>
+          <p class="leading-relaxed text-base">Sprawling over an area of 104sq.km. of land, this is one of the most-visited national parks in Asia,I give it the 2nd spot among all the best places to visit in Mumbai.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Taraporewala-Aquarium.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Taraporewala Aquarium</h2>
+          <p class="leading-relaxed text-base">Touted as India’s oldest aquarium, this place houses a variety of marine and freshwater fishes including coral fishes from the Lakshadweep Islands.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Veermata-zoo.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Veermata Jijabai Bhosale Zoo</h2>
+          <p class="leading-relaxed text-base">Kids love zoos, you can have a great day out with your little ones at Veermata Jijabai Bhosale Zoo that houses many wild animals like elephants, lion, crocodiles, etc. </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4" data-aos="zoom-out">
+      <div class="xl:w-1/4 md:w-1/4 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Elephenta-Caves.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Elephanta Caves</h2>
+          <p class="leading-relaxed text-base">Take a tour to this UNESCO World Heritage Site in Mumbai and get wonderstruck by the massive rock-cut caves that date back to several centuries.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-out">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Smaaash-Junior.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Smaaash Junior</h2>
+          <p class="leading-relaxed text-base">Looking for some indoor activities for your little munchkins on a scorching summer day or on a dull rainy day? Then, Smaaash Junior is the right place for them.  
+
+            </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-out">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/EsselWorld.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">EsselWorld</h2>
+          <p class="leading-relaxed text-base">Looking for adventure and thrill in the heart of bustling Mumbai? You can head to EsselWorld to have fun with the whole family. A wide array of vibrant and exciting rides await at this famous amusement park, to give you the adrenaline rush</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-out">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Madh-Island-Beach.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Madh Island</h2>
+          <p class="leading-relaxed text-base">Are you looking for places to roam in Mumbai that will give you a break from your busy city life? Connect with rustic farmlands and charming fishing villages at Madh Island. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Adventure-->
+
+<!--Historical-->
+<section class="text-gray-600 body-font"  id="Historical">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-100">Historical Places In Mumbai</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div id="card-1" class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gateway of India</h2>
+          <p class="leading-relaxed text-base">Gateway of India, the best place to visit in Mumbai, was built in 1924 by George Willet to honor the visit of King George V and Queen Mary to Mumbai.</p>
+
+                </div>
+        </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Sanjay-Gandhi-National-Park-1.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Sanjay Gandhi National Park</h2>
+          <p class="leading-relaxed text-base">Sprawling over an area of 104sq.km. of land, this is one of the most-visited national parks in Asia,I give it the 2nd spot among all the best places to visit in Mumbai.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Elephenta-Caves.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Elephanta Caves</h2>
+          <p class="leading-relaxed text-base">Take a tour to this UNESCO World Heritage Site in Mumbai and get wonderstruck by the massive rock-cut caves that date back to several centuries.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-in">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/08/jehangir_Art_gallery.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Jehangir Art Gallery</h2>
+          <p class="leading-relaxed text-base">Built in 1952 and backed by Sir Cowasji Jehangir’s funding, this art gallery is a popular space for many important exhibitions by photographers, painters, sculptors, craftsmen, weavers and alike. </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4" data-aos="zoom-out">
+      <div class="xl:w-1/4 md:w-1/4 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="data:image/jpeg;base64,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" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mahakali Caves</h2>
+          <p class="leading-relaxed text-base">If you wish to go back in time and explore something truly interesting, this group of 19 hillside caves should feature on your places-to-see list.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-out">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="data:image/jpeg;base64,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" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kanheri Caves</h2>
+          <p class="leading-relaxed text-base">Nestled in the forests of Sanjay Gandhi National Park, the 109 caves here were carved out of basalt rock, between..
+            </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-out">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="data:image/jpeg;base64,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" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Global Vipassana Pagoda</h2>
+          <p class="leading-relaxed text-base">Finding peace amidst Mumbai’s hustle and bustle is possible if you pay a visit to this picturesque pagoda.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="zoom-out">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Chota-kashmir.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Chota Kashmir</h2>
+          <p class="leading-relaxed text-base">If you are in search of a peaceful yet serene place to cherish some intimate moments with your partner, Chota Kashmir should be the right spot while you are in Mumbai. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Historical-->
+
+  <!--Event-->
+  <section class="text-gray-600 body-font"  id="Event">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-100">Festivals and Event</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div id="card-1" class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-up">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/Global-Citizen-Festival-mumbai.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Global Citizen</h2>
+          <p class="leading-relaxed text-base">Started in 2012, it aims at ending global poverty and Chris Martin, Coldplay’s lead vocalist is the curator for this massive event. </p>
+
+                </div>
+        </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-up">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/Ganesh-Chaturthi-mumbai.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Ganesh Chaturthi</h2>
+          <p class="leading-relaxed text-base">Ganesh Chaturthi is the main festival of Mumbai among Hindus in Mumbai. In 1893,freedom fighter Lokmanya Tilak transformed this festival into a public event .</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-up">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF-jQUuSuyFuJJDF0_m92KCcoy-6wZFnUXRw&usqp=CAU" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Youtube Fanfest</h2>
+          <p class="leading-relaxed text-base">Youtube Fanfest Mumbai is one of the most exciting Mumbai festivals to celebrate the budding Youtube stars from India and across the world. </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-up">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/Krishna-Janmashtami-mumbai.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Krishna Janmashtami</h2>
+          <p class="leading-relaxed text-base">According to Hindu Mythology, Krishna Janmashtami commemorates the birthday of Lord Krishna.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4" data-aos="flip-down">
+      <div class="xl:w-1/4 md:w-1/4 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/Holi-festival-in-Mumbai.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Holi festival</h2>
+          <p class="leading-relaxed text-base">TThere is nothing like Holi celebrations in Mumbai! The vibrant colors..</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-down">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/India-Art-Festival-mumbai.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">India Art</h2>
+          <p class="leading-relaxed text-base">Mumbai is one of the two cities to host the premier INDIA ART FESTIVAL. 
+
+            </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-down">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/04/lord-ram.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Banganga Festival</h2>
+          <p class="leading-relaxed text-base">Banganga festival is an annual festival in Mumbai celebrated in the month of January in Malabar hills for 2 days.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="flip-down">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/05/a-couple-worshipping-during-Gudi-Padwa-ss22052017.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gudi Padwa </h2>
+          <p class="leading-relaxed text-base">Gudi Padwa festival is a Hindu New Year celebrated under different names in different states.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--End Event-->
+
+  <!--night-->
+
+    <section class="text-gray-600 body-font"  id="night">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-100">Nightlife in Mumbai</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div id="card-1" class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2019/02/Gateway-of-India.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gateway of India</h2>
+          <p class="leading-relaxed text-base">Gateway of India, the best place to visit in Mumbai, was built in 1924 by George Willet.</p>
+
+                </div>
+        </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2019/02/Juhu-Beach.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Juhu Beach Park</h2>
+          <p class="leading-relaxed text-base">There is no other place in Mumbai more famous than Juhu Beach. Surrounded by the Arabian Sea.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2019/02/Marine-Drive.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Marine Drive</h2>
+          <p class="leading-relaxed text-base">If there was to be a postcard image of Mumbai, it would be the alluring Marine Drive.  </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-left">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2019/02/Bandra-Worli-Sea-Link.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bandra-Worli Sea Link</h2>
+          <p class="leading-relaxed text-base">The famous bridge across Mahim Bay, the famous cable-stayed bridge is an architectural marvel.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4" data-aos="fade-right">
+      <div class="xl:w-1/4 md:w-1/4 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2019/02/Night-Cruise-Tour.png" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Night Cruise Tour</h2>
+          <p class="leading-relaxed text-base">Embrace yourself for what is to come because you can take your significant out on a date on a cruise ship.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/4 p-4" data-aos="fade-right">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2019/02/Chhatrapati-Shivaji-Terminus.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chhatrapati Shivaji Terminus</h2>
+          <p class="leading-relaxed text-base">Chatrapati Shivaji Terminus is another UNESCO World Heritage Site situated right in the heart of Mumbai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--End night-->
+
+  <!--FAQ-->
+  <section class="text-gray-100 body-font overflow-hidden" id="FAQ" >
+  <div class="container px-5 py-24 mx-auto" id="font0">
+    <div class="-my-8 divide-y-2 divide-gray-100">
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: What is the best time to visit Mumbai?</b></h2>
+          <p class="leading-relaxed">A: The best time to visit Mumbai is between October and March when it's not too hot or humid and the rains have subsided.</p>
+        </div>
+      </div>
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: What are the best places for street shopping in Mumbai?</b></h2>
+          <p class="leading-relaxed">A: Colaba Causeway, Crawford Market, Zaveri Bazaar, Heera Panna Market and Linking Road are some of the best places for street shopping in Mumbai.</p>
+        </div>
+      </div>
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: List out the best malls of Mumbai.</b></h2>
+          <p class="leading-relaxed">A: Phoenix Market City (Kurla), R City Mall (Ghatkopar), Infiniti Mall (Andheri), Oberoi Mall (Goregaon) and Inorbit Mall (Malad) are the top 5 malls in Mumbai.</p>
+        </div>
+      </div>
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: What are the best places to eat near Mumbai airport?</b></h2>
+          <p class="leading-relaxed">A: Persian Darbar, Opa!, Delhi Highway, Barbeque Nation, Eva's Pizza, Dragonfly Experience, Pop Tate's, Oozo, Chimichurri, Cheelizza, Urban Tadka and Roots of India are some of the popular restaurants in Mumbai near the airport.</p>
+        </div>
+      </div>
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: Suggest some good places to party in South Mumbai.</b></h2>
+          <p class="leading-relaxed">A: Lord of the Drinks, Tamasha, MRP, Colaba Social, 145 The Mill, London Taxi, Toit, Havana, Effingut, The Sassy Spoon, House of Tipsy, Talli Turmeric, Millennials, Light House Cafe, Dome, TAP and The Bombay Cartel are a few of the buzzing nightlife places in South Mumbai.</p>
+        </div>
+      </div>
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: What are different means available to get around Mumbai?</b></h2>
+          <p class="leading-relaxed">A: Mumbai has an efficient public transportation system comprising kaali peeli taxis, autos, BEST buses, metro rail (Versova-Ghatkopar; 12 stations) and the most used of all -- the local train (running along Western, Central and Harbour lines).</p>
+        </div>
+      </div>
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-100 title-font mb-2"><b>Q: Where is Mumbai airport located? How to reach my hotel from there?.</b></h2>
+          <p class="leading-relaxed">A: Mumbai's Chhatrapati Shivaji International Airport is located in Vile Parle area. Metered taxis, prepaid taxis, private cabs, app-based cabs and auto rickshaws are all available from the airport to travel to different areas and hotels in Mumbai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--End FAQ-->
+
+  <!--Feedback-->
+  <section id="Feedback">
+   <center> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtSU2bbDD5Ww1ofyK30y7pTTbBspYRtvoYxf1Kl9tJH6cBhw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center>
+  </section>
+  <!--END Feedback-->
+
+</div>
+
+
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="{% static 'js/home.js' %}"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdn.rawgit.com/thiagoh/de-animate/0.2.3/dist/jquery.de-animate.min.js'></script>
+  <script src='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js'></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 120,
+    	duration:400,
+    });
+  </script>
+
+</html>
